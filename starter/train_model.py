@@ -27,7 +27,9 @@ X_train, y_train, encoder, lb = process_data(
 )
 
 # Proces the test data with the process_data function.
-
+X_test, y_test, encoder_t, lb_t = process_data(
+    test, categorical_features=cat_features,
+    label="salary", training=False, encoder=encoder, lb=lb)
 # Train and save a model.
 trained_model = train_model(X_train, y_train)
 
@@ -37,3 +39,10 @@ with open("../model/lb.pkl", "wb",) as file:
     pickle.dump(lb, file)
 with open("../model/encoder.pkl", "wb",) as file:
     pickle.dump(encoder, file)
+
+# caculate model performance on test data
+predictions = inference(trained_model, X_test)
+precision, recall, fbeta = compute_model_metrics(y_test, predictions)
+print("precision : ", precision)
+print("recall : ", recall)
+print("fbeta : ", fbeta)

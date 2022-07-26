@@ -3,15 +3,17 @@
 For additional information see the Model Card paper: https://arxiv.org/pdf/1810.03993.pdf
 
 ## Model Details
-
+A Random Forest Classifier using the default parameters 
 ## Intended Use
-
+The model could be used to predict whether the salary of a person will be more or less than 50k based on the Census Income Data Set
 ## Training Data
-
+80% of Census Income Data Set by UCI
 ## Evaluation Data
-
+The other 20%
 ## Metrics
-_Please include the metrics used and your model's performance on those metrics._
+- precision : 0.74
+- recall : 0.62
+- fbeta : 0.67
 
 ## Ethical Considerations
 
