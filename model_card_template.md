@@ -18,3 +18,4 @@ The other 20%
 ## Ethical Considerations
 
 ## Caveats and Recommendations
+We could perform Hyper-parameter optimization and more feature engineering and feature selection for  better results.
