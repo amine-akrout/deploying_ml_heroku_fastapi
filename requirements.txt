@@ -6,3 +6,4 @@ requests==2.28.1
 fastapi==0.63.0
 uvicorn==0.18.2
 flake8==4.0.1
+aequitas

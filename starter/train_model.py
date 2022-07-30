@@ -4,6 +4,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from ml.model import *
 from ml.data import process_data
+from aequitas.group import Group
+from aequitas.bias import Bias
+from aequitas.fairness import Fairness
+from aequitas.plotting import Plot
 
 # Add the necessary imports for the starter code.
 
@@ -46,3 +50,31 @@ precision, recall, fbeta = compute_model_metrics(y_test, predictions)
 print("precision : ", precision)
 print("recall : ", recall)
 print("fbeta : ", fbeta)
+
+# performance of the model on slices of the data
+
+
+def create_slices_performance():
+    cat_features.append('salary')
+    slices_df = test[cat_features]
+    slices_df.reset_index(inplace=True, drop=True)
+    slices_df['label_value'] = lb.transform(slices_df['salary']).ravel()
+    slices_df = slices_df.drop('salary', axis=1)
+    preds = pd.DataFrame(predictions, columns=['score'])
+    slices_df = pd.concat([slices_df, preds], axis=1)
+    return slices_df
+
+
+slices_df = create_slices_performance()
+
+
+def slices_performance():
+    g = Group()
+    xtab, _ = g.get_crosstabs(slices_df)
+    absolute_metrics = g.list_absolute_metrics(xtab)
+    check_df = xtab[['attribute_name', 'attribute_value'] +
+                    absolute_metrics].round(2)
+    check_df.to_csv(r'slice_model_output.txt', sep='\t\t')
+
+
+slices_performance()
