@@ -37,14 +37,9 @@ class CustomerData(BaseModel):
 # Instantiate the app
 app = FastAPI()
 
-if "DYNO" in os.environ and os.path.isdir(".dvc"):
-    os.system("dvc config core.no_scm true")
-    if os.system("dvc pull") != 0:
-        exit("dvc pull failed")
-    os.system("rm -r .dvc .apt/usr/lib/dvc")
-
-
 # Define a GET on the specified andpoint
+
+
 @app.get("/")
 async def get_items():
     """Simple GET"""
