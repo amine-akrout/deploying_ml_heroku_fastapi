@@ -3,8 +3,12 @@ This is unit test for rest_api.py
 """
 
 import pytest
+import pickle
 from fastapi.testclient import TestClient
 from main import app
+from pathlib import Path
+
+root_path = Path(__file__).parent.absolute()
 
 
 @pytest.fixture
@@ -37,16 +41,16 @@ def test_post_more_than_50(client):
             "workclass": "State-gov",
             "fnlgt": 209280,
             "education": "Masters",
-            "education_num": 13,
-            "marital_status": "Married-civ-spouse",
+            "education-num": 13,
+            "marital-status": "Married-civ-spouse",
             "occupation": "Prof-specialty",
             "relationship": "Husband",
             "race": "White",
             "sex": "Male",
-            "capital_gain": 7000,
-            "capital_loss": 0,
-            "hours_per_week": 35,
-            "native_country": "United-States",
+            "capital-gain": 7000,
+            "capital-loss": 0,
+            "hours-per-week": 35,
+            "native-country": "United-States",
         },
     )
 
@@ -66,16 +70,16 @@ def test_post_less_than_50(client):
             "workclass": "State-gov",
             "fnlgt": 77516,
             "education": "Bachelors",
-            "education_num": 13,
-            "marital_status": "Never-married",
+            "education-num": 13,
+            "marital-status": "Never-married",
             "occupation": "Adm-clerical",
             "relationship": "Not-in-family",
             "race": "White",
             "sex": "Male",
-            "capital_gain": 2174,
-            "capital_loss": 0,
-            "hours_per_week": 40,
-            "native_country": "United-States",
+            "capital-gain": 2174,
+            "capital-loss": 0,
+            "hours-per-week": 40,
+            "native-country": "United-States",
         },
     )
 

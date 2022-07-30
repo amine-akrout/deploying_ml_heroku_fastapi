@@ -1,14 +1,11 @@
 """ 
 Module for web app API
 """
-import os
-
 # from typing import Literal
 from pydantic import BaseModel
 from fastapi import FastAPI
 import pickle
 import pandas as pd
-import numpy as np
 from starter.ml.data import process_data
 from starter.ml.model import inference
 
@@ -46,18 +43,13 @@ class CustomerData(BaseModel):
 # Instantiate the app
 app = FastAPI()
 
-# Load models on startup to speed-up POST request step
-@app.on_event("startup")
-async def startup_event():
-    global trained_model, encoder, lb
-    with open("./model/trained_model.pkl", "rb") as f:
-        trained_model = pickle.load(f)
-    with open("./model/encoder.pkl", "rb") as f:
-        encoder = pickle.load(f)
-    with open("./model/lb.pkl", "rb") as f:
-        lb = pickle.load(f)
 
-
+with open("./model/trained_model.pkl", "rb") as f:
+    trained_model = pickle.load(f)
+with open("./model/encoder.pkl", "rb") as f:
+    encoder = pickle.load(f)
+with open("./model/lb.pkl", "rb") as f:
+    lb = pickle.load(f)
 
 # Define a GET on the specified andpoint
 @app.get("/")
@@ -95,4 +87,3 @@ async def make_inference(data: CustomerData):
     prediction = inference(trained_model, X)
     y = lb.inverse_transform(prediction)[0]
     return {"prediction": y}
-
