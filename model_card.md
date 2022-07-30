@@ -16,6 +16,7 @@ The other 20%
 - fbeta : 0.67
 
 ## Ethical Considerations
+Model Fairness should be examined further, scince we have race and gender in dataset which could conduct to potential gender,racial discrimination.  
 
 ## Caveats and Recommendations
 We could perform Hyper-parameter optimization and more feature engineering and feature selection for  better results.
