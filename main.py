@@ -12,6 +12,12 @@ import numpy as np
 from starter.ml.data import process_data
 from starter.ml.model import inference
 
+# Alias Generator funtion for class CensusData
+
+
+def replace_hyphens(string: str) -> str:
+    return string.replace('_', '-')
+
 
 class CustomerData(BaseModel):
     """
@@ -33,13 +39,27 @@ class CustomerData(BaseModel):
     hours_per_week: int
     native_country: str
 
+    class Config:
+        alias_generator = replace_hyphens
+
 
 # Instantiate the app
 app = FastAPI()
 
+# Load models on startup to speed-up POST request step
+@app.on_event("startup")
+async def startup_event():
+    global trained_model, encoder, lb
+    with open("./model/trained_model.pkl", "rb") as f:
+        trained_model = pickle.load(f)
+    with open("./model/encoder.pkl", "rb") as f:
+        encoder = pickle.load(f)
+    with open("./model/lb.pkl", "rb") as f:
+        lb = pickle.load(f)
+
+
+
 # Define a GET on the specified andpoint
-
-
 @app.get("/")
 async def get_items():
     """Simple GET"""
@@ -49,25 +69,18 @@ async def get_items():
 @app.post("/prediction")
 async def make_inference(data: CustomerData):
     """POST to return prediction from our saved model"""
-    with open("./model/trained_model.pkl", "rb") as f:
-        trained_model = pickle.load(f)
-    with open("./model/encoder.pkl", "rb") as f:
-        encoder = pickle.load(f)
-    with open("./model/lb.pkl", "rb") as f:
-        lb = pickle.load(f)
-
     input_data = data.dict(by_alias=True)
     input_df = pd.DataFrame(input_data, index=[0])
 
     cat_features = [
         "workclass",
         "education",
-        "marital_status",
+        "marital-status",
         "occupation",
         "relationship",
         "race",
         "sex",
-        "native_country",
+        "native-country",
     ]
 
     X, _, _, _ = process_data(
@@ -82,3 +95,4 @@ async def make_inference(data: CustomerData):
     prediction = inference(trained_model, X)
     y = lb.inverse_transform(prediction)[0]
     return {"prediction": y}
+
