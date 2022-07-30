@@ -18,7 +18,8 @@ data = {
     "native_country": "United-States"
 }
 
-r = requests.post('https://udacity-census-ml.herokuapp.com/prediction', json=data)
+r = requests.post(
+    'https://udacity-census-ml.herokuapp.com/prediction', json=data)
 
 assert r.status_code == 200
 
