@@ -20,7 +20,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
 
-    rf_classifier = RandomForestClassifier()
+    rf_classifier = RandomForestClassifier(n_estimators=10)
     rf_classifier.fit(X_train, y_train)
     return rf_classifier
 
