@@ -13,7 +13,7 @@ from starter.ml.model import inference
 
 
 def replace_hyphens(string: str) -> str:
-    return string.replace('_', '-')
+    return string.replace("_", "-")
 
 
 class CustomerData(BaseModel):
@@ -38,6 +38,24 @@ class CustomerData(BaseModel):
 
     class Config:
         alias_generator = replace_hyphens
+        schema_extra = {
+            "example": {
+                "age": 39,
+                "workclass": "State-gov",
+                "fnlgt": 77516,
+                "education": "Bachelors",
+                "education-num": 13,
+                "marital-status": "Never-married",
+                "occupation": "Adm-clerical",
+                "relationship": "Not-in-family",
+                "race": "White",
+                "sex": "Male",
+                "capital-gain": 2174,
+                "capital-loss": 0,
+                "hours-per-week": 40,
+                "native-country": "United-States",
+            }
+        }
 
 
 # Instantiate the app
@@ -52,6 +70,8 @@ with open("./model/lb.pkl", "rb") as f:
     lb = pickle.load(f)
 
 # Define a GET on the specified andpoint
+
+
 @app.get("/")
 async def get_items():
     """Simple GET"""
