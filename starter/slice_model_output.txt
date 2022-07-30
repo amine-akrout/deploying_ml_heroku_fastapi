@@ -1,103 +1,102 @@
 	attribute_name	attribute_value	tpr	tnr	for	fdr	fpr	fnr	npv	precision	ppr	pprev	prev
-0	workclass	?	0.38	0.96	0.05	0.52	0.04	0.62	0.95	0.48	0.02	0.06	0.08
-1	workclass	Federal-gov	0.64	0.9	0.21	0.19	0.1	0.36	0.79	0.81	0.05	0.31	0.4
-2	workclass	Local-gov	0.6	0.9	0.15	0.31	0.1	0.4	0.85	0.69	0.08	0.24	0.28
+0	workclass	?	0.47	0.96	0.06	0.4	0.04	0.53	0.94	0.6	0.02	0.09	0.11
+1	workclass	Federal-gov	0.57	0.84	0.26	0.28	0.16	0.42	0.74	0.72	0.05	0.33	0.41
+2	workclass	Local-gov	0.61	0.9	0.14	0.32	0.1	0.39	0.86	0.68	0.08	0.24	0.27
 3	workclass	Never-worked		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-4	workclass	Private	0.57	0.94	0.11	0.27	0.06	0.43	0.89	0.73	0.61	0.17	0.22
-5	workclass	Self-emp-inc	0.79	0.72	0.26	0.22	0.28	0.21	0.74	0.78	0.1	0.56	0.55
-6	workclass	Self-emp-not-inc	0.49	0.9	0.17	0.35	0.1	0.51	0.83	0.65	0.09	0.2	0.27
-7	workclass	State-gov	0.69	0.93	0.13	0.19	0.07	0.31	0.87	0.81	0.06	0.26	0.3
-8	workclass	Without-pay		0.67	0.0	1.0	0.33		1.0	0.0	0.0	0.33	0.0
-9	education	10th	0.12	1.0	0.07	0.0	0.0	0.88	0.93	1.0	0.0	0.01	0.08
-10	education	11th	0.31	1.0	0.04	0.0	0.0	0.69	0.96	1.0	0.0	0.02	0.05
-11	education	12th	0.5	1.0	0.05	0.0	0.0	0.5	0.95	1.0	0.0	0.04	0.09
-12	education	1st-4th	0.5	1.0	0.04	0.0	0.0	0.5	0.96	1.0	0.0	0.04	0.07
-13	education	5th-6th	0.0	0.99	0.04	1.0	0.01	1.0	0.96	0.0	0.0	0.01	0.04
-14	education	7th-8th	0.12	0.99	0.06	0.5	0.01	0.88	0.94	0.5	0.0	0.02	0.07
-15	education	9th	0.0	1.0	0.07		0.0	1.0	0.93		0.0	0.0	0.07
-16	education	Assoc-acdm	0.49	0.94	0.16	0.28	0.06	0.51	0.84	0.72	0.03	0.17	0.25
-17	education	Assoc-voc	0.47	0.93	0.16	0.33	0.07	0.53	0.84	0.67	0.04	0.17	0.24
-18	education	Bachelors	0.69	0.84	0.19	0.26	0.16	0.31	0.81	0.74	0.3	0.37	0.4
-19	education	Doctorate	0.88	0.65	0.42	0.09	0.35	0.12	0.58	0.91	0.05	0.77	0.8
-20	education	HS-grad	0.37	0.96	0.11	0.38	0.04	0.63	0.89	0.62	0.16	0.1	0.16
-21	education	Masters	0.8	0.79	0.25	0.17	0.21	0.2	0.75	0.83	0.15	0.54	0.56
+4	workclass	Private	0.57	0.94	0.11	0.28	0.06	0.43	0.89	0.72	0.62	0.18	0.22
+5	workclass	Self-emp-inc	0.71	0.76	0.31	0.23	0.24	0.29	0.69	0.77	0.09	0.5	0.54
+6	workclass	Self-emp-not-inc	0.5	0.88	0.17	0.41	0.12	0.5	0.83	0.59	0.08	0.22	0.26
+7	workclass	State-gov	0.67	0.9	0.11	0.32	0.1	0.33	0.89	0.68	0.05	0.24	0.25
+8	workclass	Without-pay		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+9	education	10th	0.2	0.99	0.05	0.33	0.01	0.8	0.95	0.67	0.0	0.02	0.06
+10	education	11th	0.23	1.0	0.04	0.25	0.0	0.77	0.96	0.75	0.0	0.02	0.06
+11	education	12th	0.25	1.0	0.08	0.0	0.0	0.75	0.92	1.0	0.0	0.03	0.1
+12	education	1st-4th	0.0	1.0	0.06		0.0	1.0	0.94		0.0	0.0	0.06
+13	education	5th-6th	0.2	1.0	0.06	0.0	0.0	0.8	0.94	1.0	0.0	0.01	0.07
+14	education	7th-8th	0.22	0.97	0.06	0.6	0.03	0.78	0.94	0.4	0.0	0.04	0.07
+15	education	9th	0.4	1.0	0.03	0.0	0.0	0.6	0.97	1.0	0.0	0.02	0.05
+16	education	Assoc-acdm	0.47	0.92	0.15	0.38	0.08	0.53	0.85	0.62	0.02	0.17	0.23
+17	education	Assoc-voc	0.5	0.92	0.17	0.3	0.08	0.5	0.83	0.7	0.04	0.2	0.27
+18	education	Bachelors	0.69	0.82	0.2	0.28	0.18	0.31	0.8	0.72	0.32	0.38	0.39
+19	education	Doctorate	0.87	0.42	0.44	0.21	0.58	0.13	0.56	0.79	0.05	0.79	0.72
+20	education	HS-grad	0.41	0.95	0.11	0.38	0.05	0.59	0.89	0.62	0.18	0.11	0.17
+21	education	Masters	0.78	0.79	0.24	0.19	0.21	0.22	0.76	0.81	0.15	0.51	0.53
 22	education	Preschool		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-23	education	Prof-school	0.91	0.47	0.32	0.18	0.53	0.09	0.68	0.82	0.07	0.81	0.72
-24	education	Some-college	0.53	0.93	0.11	0.34	0.07	0.47	0.89	0.66	0.18	0.16	0.2
-25	marital_status	Divorced	0.28	0.99	0.09	0.22	0.01	0.72	0.91	0.78	0.03	0.04	0.11
-26	marital_status	Married-AF-spouse	0.33		1.0	0.0		0.67	0.0	1.0	0.0	0.33	1.0
-27	marital_status	Married-civ-spouse	0.63	0.81	0.27	0.28	0.19	0.37	0.73	0.72	0.92	0.39	0.44
-28	marital_status	Married-spouse-absent	0.4	1.0	0.04	0.0	0.0	0.6	0.96	1.0	0.0	0.03	0.06
-29	marital_status	Never-married	0.44	0.99	0.03	0.2	0.01	0.56	0.97	0.8	0.04	0.03	0.05
-30	marital_status	Separated	0.36	0.99	0.04	0.2	0.01	0.64	0.96	0.8	0.0	0.03	0.06
-31	marital_status	Widowed	0.38	1.0	0.05	0.0	0.0	0.62	0.95	1.0	0.0	0.03	0.08
-32	occupation	?	0.38	0.96	0.05	0.52	0.04	0.62	0.95	0.48	0.02	0.06	0.08
-33	occupation	Adm-clerical	0.46	0.96	0.09	0.3	0.04	0.54	0.91	0.7	0.06	0.1	0.16
+23	education	Prof-school	0.94	0.52	0.19	0.19	0.48	0.06	0.81	0.81	0.07	0.8	0.69
+24	education	Some-college	0.45	0.94	0.13	0.37	0.06	0.55	0.87	0.63	0.16	0.14	0.2
+25	marital-status	Divorced	0.42	0.98	0.07	0.22	0.02	0.58	0.93	0.78	0.04	0.06	0.11
+26	marital-status	Married-AF-spouse	0.0	1.0	0.4		0.0	1.0	0.6		0.0	0.0	0.4
+27	marital-status	Married-civ-spouse	0.62	0.79	0.27	0.3	0.21	0.38	0.73	0.7	0.91	0.39	0.44
+28	marital-status	Married-spouse-absent	0.12	1.0	0.09	0.0	0.0	0.88	0.91	1.0	0.0	0.01	0.1
+29	marital-status	Never-married	0.34	0.99	0.03	0.35	0.01	0.66	0.97	0.65	0.04	0.02	0.04
+30	marital-status	Separated	0.31	1.0	0.05	0.17	0.0	0.69	0.95	0.83	0.0	0.03	0.07
+31	marital-status	Widowed	0.19	1.0	0.08	0.2	0.0	0.81	0.92	0.8	0.0	0.02	0.09
+32	occupation	?	0.47	0.96	0.06	0.4	0.04	0.53	0.94	0.6	0.02	0.09	0.11
+33	occupation	Adm-clerical	0.43	0.96	0.09	0.36	0.04	0.57	0.91	0.64	0.06	0.1	0.15
 34	occupation	Armed-Forces		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-35	occupation	Craft-repair	0.41	0.92	0.15	0.4	0.08	0.59	0.85	0.6	0.1	0.15	0.22
-36	occupation	Exec-managerial	0.71	0.8	0.26	0.23	0.2	0.29	0.74	0.77	0.29	0.45	0.49
-37	occupation	Farming-fishing	0.32	0.97	0.07	0.5	0.03	0.68	0.93	0.5	0.01	0.06	0.09
-38	occupation	Handlers-cleaners	0.39	0.99	0.07	0.14	0.01	0.61	0.93	0.86	0.01	0.05	0.1
-39	occupation	Machine-op-inspct	0.33	0.96	0.09	0.45	0.04	0.67	0.91	0.55	0.02	0.07	0.13
-40	occupation	Other-service	0.27	1.0	0.03	0.22	0.0	0.73	0.97	0.78	0.01	0.01	0.04
-41	occupation	Priv-house-serv	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.03	0.03
-42	occupation	Prof-specialty	0.73	0.84	0.21	0.21	0.16	0.27	0.79	0.79	0.28	0.42	0.45
-43	occupation	Protective-serv	0.54	0.87	0.2	0.34	0.13	0.46	0.8	0.66	0.02	0.26	0.32
-44	occupation	Sales	0.58	0.92	0.13	0.29	0.08	0.42	0.87	0.71	0.11	0.2	0.24
-45	occupation	Tech-support	0.56	0.89	0.16	0.33	0.11	0.44	0.84	0.67	0.04	0.23	0.28
-46	occupation	Transport-moving	0.43	0.96	0.13	0.24	0.04	0.57	0.87	0.76	0.03	0.12	0.21
-47	relationship	Husband	0.63	0.8	0.26	0.29	0.2	0.37	0.74	0.71	0.81	0.39	0.44
-48	relationship	Not-in-family	0.39	0.99	0.07	0.22	0.01	0.61	0.93	0.78	0.07	0.05	0.1
-49	relationship	Other-relative	0.33	0.99	0.04	0.33	0.01	0.67	0.96	0.67	0.0	0.03	0.06
-50	relationship	Own-child	0.29	1.0	0.01	0.0	0.0	0.71	0.99	1.0	0.0	0.0	0.01
-51	relationship	Unmarried	0.3	1.0	0.05	0.06	0.0	0.7	0.95	0.94	0.01	0.02	0.07
-52	relationship	Wife	0.62	0.82	0.34	0.21	0.18	0.38	0.66	0.79	0.11	0.41	0.52
-53	race	Amer-Indian-Eskimo	0.14	0.98	0.1	0.5	0.02	0.86	0.9	0.5	0.0	0.03	0.11
-54	race	Asian-Pac-Islander	0.61	0.86	0.15	0.36	0.14	0.39	0.85	0.64	0.04	0.27	0.28
-55	race	Black	0.59	0.97	0.05	0.3	0.03	0.41	0.95	0.7	0.05	0.09	0.11
-56	race	Other	0.33	0.98	0.04	0.5	0.02	0.67	0.96	0.5	0.0	0.04	0.06
-57	race	White	0.59	0.93	0.13	0.26	0.07	0.41	0.87	0.74	0.9	0.2	0.25
-58	sex	Female	0.53	0.98	0.06	0.21	0.02	0.47	0.94	0.79	0.13	0.08	0.12
-59	sex	Male	0.6	0.9	0.16	0.28	0.1	0.4	0.84	0.72	0.87	0.25	0.3
-60	native_country	?	0.68	0.91	0.12	0.26	0.09	0.32	0.88	0.74	0.02	0.26	0.28
-61	native_country	Cambodia	0.0	1.0	0.29		0.0	1.0	0.71		0.0	0.0	0.29
-62	native_country	Canada	0.75	1.0	0.13	0.0	0.0	0.25	0.87	1.0	0.0	0.29	0.38
-63	native_country	China	1.0	0.86	0.0	0.5	0.14	0.0	1.0	0.5	0.0	0.25	0.12
-64	native_country	Columbia	0.0	0.88	0.12	1.0	0.12	1.0	0.88	0.0	0.0	0.11	0.11
-65	native_country	Cuba	0.6	1.0	0.14	0.0	0.0	0.4	0.86	1.0	0.0	0.18	0.29
-66	native_country	Dominican-Republic		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-67	native_country	Ecuador		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-68	native_country	El-Salvador	1.0	0.94	0.0	0.33	0.06	0.0	1.0	0.67	0.0	0.16	0.11
-69	native_country	England	0.67	0.89	0.11	0.33	0.11	0.33	0.89	0.67	0.0	0.25	0.25
-70	native_country	France	1.0	0.0		0.5	1.0	0.0		0.5	0.0	1.0	0.5
-71	native_country	Germany	0.89	0.85	0.06	0.27	0.15	0.11	0.94	0.73	0.01	0.38	0.31
-72	native_country	Greece		0.8	0.0	1.0	0.2		1.0	0.0	0.0	0.2	0.0
-73	native_country	Guatemala		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-74	native_country	Haiti		0.92	0.0	1.0	0.08		1.0	0.0	0.0	0.08	0.0
-75	native_country	Holand-Netherlands		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-76	native_country	Honduras		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-77	native_country	Hong	0.0	1.0	0.33		0.0	1.0	0.67		0.0	0.0	0.33
-78	native_country	Hungary	0.0		1.0			1.0	0.0		0.0	0.0	1.0
-79	native_country	India	0.88	0.69	0.1	0.36	0.31	0.12	0.9	0.64	0.01	0.52	0.38
-80	native_country	Iran	0.67	0.5	0.33	0.5	0.5	0.33	0.67	0.5	0.0	0.57	0.43
-81	native_country	Ireland	0.0	1.0	0.2		0.0	1.0	0.8		0.0	0.0	0.2
-82	native_country	Italy	0.29	1.0	0.28	0.0	0.0	0.71	0.72	1.0	0.0	0.1	0.35
-83	native_country	Jamaica	0.5	1.0	0.07	0.0	0.0	0.5	0.93	1.0	0.0	0.07	0.13
-84	native_country	Japan	0.75	0.9	0.1	0.25	0.1	0.25	0.9	0.75	0.0	0.29	0.29
-85	native_country	Laos		0.8	0.0	1.0	0.2		1.0	0.0	0.0	0.2	0.0
-86	native_country	Mexico	0.33	0.99	0.03	0.33	0.01	0.67	0.97	0.67	0.0	0.02	0.05
-87	native_country	Nicaragua		0.83	0.0	1.0	0.17		1.0	0.0	0.0	0.17	0.0
-88	native_country	Outlying-US(Guam-USVI-etc)		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-89	native_country	Peru		0.88	0.0	1.0	0.12		1.0	0.0	0.0	0.12	0.0
-90	native_country	Philippines	0.44	0.9	0.28	0.27	0.1	0.56	0.72	0.73	0.01	0.23	0.38
-91	native_country	Poland	0.4	1.0	0.3	0.0	0.0	0.6	0.7	1.0	0.0	0.17	0.42
-92	native_country	Portugal	0.0	1.0	0.25		0.0	1.0	0.75		0.0	0.0	0.25
-93	native_country	Puerto-Rico	0.0	0.95	0.05	1.0	0.05	1.0	0.95	0.0	0.0	0.05	0.05
-94	native_country	Scotland		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-95	native_country	South	1.0	0.73	0.0	0.75	0.27	0.0	1.0	0.25	0.0	0.33	0.08
-96	native_country	Taiwan	0.67	1.0	0.14	0.0	0.0	0.33	0.86	1.0	0.0	0.22	0.33
-97	native_country	Thailand	0.67	1.0	0.5	0.0	0.0	0.33	0.5	1.0	0.0	0.5	0.75
-98	native_country	Trinadad&Tobago		1.0	0.0		0.0		1.0		0.0	0.0	0.0
-99	native_country	United-States	0.59	0.93	0.12	0.26	0.07	0.41	0.88	0.74	0.91	0.19	0.24
-100	native_country	Vietnam		0.9	0.0	1.0	0.1		1.0	0.0	0.0	0.1	0.0
-101	native_country	Yugoslavia	0.0	1.0	0.5		0.0	1.0	0.5		0.0	0.0	0.5
+35	occupation	Craft-repair	0.39	0.93	0.17	0.36	0.07	0.61	0.83	0.64	0.09	0.15	0.24
+36	occupation	Exec-managerial	0.75	0.81	0.22	0.21	0.19	0.25	0.78	0.79	0.3	0.46	0.49
+37	occupation	Farming-fishing	0.24	0.96	0.08	0.58	0.04	0.76	0.92	0.42	0.01	0.06	0.1
+38	occupation	Handlers-cleaners	0.41	0.99	0.04	0.3	0.01	0.59	0.96	0.7	0.01	0.04	0.07
+39	occupation	Machine-op-inspct	0.32	0.98	0.09	0.35	0.02	0.68	0.91	0.65	0.02	0.06	0.12
+40	occupation	Other-service	0.2	0.99	0.04	0.45	0.01	0.8	0.96	0.55	0.01	0.02	0.05
+41	occupation	Priv-house-serv		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+42	occupation	Prof-specialty	0.73	0.83	0.19	0.25	0.17	0.27	0.81	0.75	0.26	0.4	0.41
+43	occupation	Protective-serv	0.4	0.87	0.24	0.42	0.13	0.6	0.76	0.58	0.02	0.22	0.31
+44	occupation	Sales	0.54	0.89	0.16	0.35	0.11	0.46	0.84	0.65	0.13	0.22	0.27
+45	occupation	Tech-support	0.68	0.84	0.12	0.4	0.16	0.32	0.88	0.6	0.05	0.3	0.26
+46	occupation	Transport-moving	0.37	0.94	0.14	0.41	0.06	0.63	0.86	0.59	0.03	0.12	0.2
+47	relationship	Husband	0.64	0.79	0.26	0.29	0.21	0.36	0.74	0.71	0.81	0.4	0.44
+48	relationship	Not-in-family	0.41	0.98	0.07	0.27	0.02	0.59	0.93	0.73	0.08	0.06	0.11
+49	relationship	Other-relative	0.2	1.0	0.02	0.0	0.0	0.8	0.98	1.0	0.0	0.0	0.02
+50	relationship	Own-child	0.12	1.0	0.02	0.0	0.0	0.88	0.98	1.0	0.0	0.0	0.02
+51	relationship	Unmarried	0.24	0.99	0.05	0.25	0.01	0.76	0.95	0.75	0.01	0.02	0.07
+52	relationship	Wife	0.54	0.74	0.38	0.33	0.26	0.46	0.62	0.67	0.1	0.4	0.49
+53	race	Amer-Indian-Eskimo	0.5	0.96	0.08	0.33	0.04	0.5	0.92	0.67	0.0	0.1	0.14
+54	race	Asian-Pac-Islander	0.58	0.91	0.15	0.3	0.09	0.42	0.85	0.7	0.04	0.23	0.27
+55	race	Black	0.58	0.96	0.06	0.33	0.04	0.42	0.94	0.67	0.05	0.11	0.13
+56	race	Other	0.0	0.98	0.07	1.0	0.02	1.0	0.93	0.0	0.0	0.02	0.07
+57	race	White	0.58	0.92	0.13	0.29	0.08	0.42	0.87	0.71	0.9	0.21	0.25
+58	sex	Female	0.45	0.97	0.07	0.32	0.03	0.55	0.93	0.68	0.13	0.08	0.12
+59	sex	Male	0.61	0.89	0.16	0.29	0.11	0.39	0.84	0.71	0.87	0.26	0.3
+60	native-country	?	0.66	0.91	0.12	0.26	0.09	0.34	0.88	0.74	0.02	0.24	0.28
+61	native-country	Cambodia	0.25	1.0	0.75	0.0	0.0	0.75	0.25	1.0	0.0	0.2	0.8
+62	native-country	Canada	0.62	0.92	0.21	0.17	0.08	0.38	0.79	0.83	0.0	0.3	0.4
+63	native-country	China		0.87	0.0	1.0	0.13		1.0	0.0	0.0	0.13	0.0
+64	native-country	Columbia		0.89	0.0	1.0	0.11		1.0	0.0	0.0	0.11	0.0
+65	native-country	Cuba	0.57	0.92	0.2	0.2	0.08	0.43	0.8	0.8	0.0	0.25	0.35
+66	native-country	Dominican-Republic		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+67	native-country	Ecuador	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.17	0.17
+68	native-country	El-Salvador	0.0	0.95	0.05	1.0	0.05	1.0	0.95	0.0	0.0	0.05	0.05
+69	native-country	England	0.29	1.0	0.38	0.0	0.0	0.71	0.62	1.0	0.0	0.13	0.47
+70	native-country	France	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.33	0.33
+71	native-country	Germany	0.6	0.87	0.09	0.5	0.13	0.4	0.91	0.5	0.0	0.21	0.18
+72	native-country	Greece	0.5	1.0	0.25	0.0	0.0	0.5	0.75	1.0	0.0	0.2	0.4
+73	native-country	Guatemala		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+74	native-country	Haiti	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.17	0.17
+75	native-country	Honduras		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+76	native-country	Hong	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.33	0.33
+77	native-country	Hungary	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.2	0.2
+78	native-country	India	0.73	0.75	0.25	0.27	0.25	0.27	0.75	0.73	0.01	0.48	0.48
+79	native-country	Iran	1.0	0.4	0.0	0.75	0.6	0.0	1.0	0.25	0.0	0.67	0.17
+80	native-country	Ireland	0.0	1.0	0.2		0.0	1.0	0.8		0.0	0.0	0.2
+81	native-country	Italy	0.33	0.92	0.33	0.25	0.08	0.67	0.67	0.75	0.0	0.18	0.41
+82	native-country	Jamaica	1.0	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.06	0.06
+83	native-country	Japan	0.67	1.0	0.12	0.0	0.0	0.33	0.88	1.0	0.0	0.2	0.3
+84	native-country	Laos	0.0	1.0	0.2		0.0	1.0	0.8		0.0	0.0	0.2
+85	native-country	Mexico	0.12	1.0	0.05	0.0	0.0	0.88	0.95	1.0	0.0	0.01	0.06
+86	native-country	Nicaragua		0.75	0.0	1.0	0.25		1.0	0.0	0.0	0.25	0.0
+87	native-country	Outlying-US(Guam-USVI-etc)		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+88	native-country	Peru		0.8	0.0	1.0	0.2		1.0	0.0	0.0	0.2	0.0
+89	native-country	Philippines	0.5	0.94	0.21	0.2	0.06	0.5	0.79	0.8	0.01	0.21	0.33
+90	native-country	Poland	0.33	0.9	0.18	0.5	0.1	0.67	0.82	0.5	0.0	0.15	0.23
+91	native-country	Portugal		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+92	native-country	Puerto-Rico	0.5	1.0	0.06	0.0	0.0	0.5	0.94	1.0	0.0	0.05	0.11
+93	native-country	Scotland		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+94	native-country	South	0.0	0.75	0.1	1.0	0.25	1.0	0.9	0.0	0.0	0.23	0.08
+95	native-country	Taiwan	1.0	0.89	0.0	0.14	0.11	0.0	1.0	0.86	0.01	0.47	0.4
+96	native-country	Thailand		1.0	0.0		0.0		1.0		0.0	0.0	0.0
+97	native-country	Trinadad&Tobago	1.0	0.6	0.0	0.67	0.4	0.0	1.0	0.33	0.0	0.5	0.17
+98	native-country	United-States	0.58	0.92	0.13	0.29	0.08	0.42	0.87	0.71	0.91	0.2	0.24
+99	native-country	Vietnam	1.0	0.93	0.0	0.5	0.07	0.0	1.0	0.5	0.0	0.13	0.07
+100	native-country	Yugoslavia		1.0	0.0		0.0		1.0		0.0	0.0	0.0
